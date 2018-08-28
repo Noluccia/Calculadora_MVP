@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:fontFamily="serif-monospace"
+        android:text="CALCULADORA"
+        android:textAlignment="center"
+        android:textColor="@color/colorNose"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtn1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnsuma"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="162dp"
+        android:background="@color/colorRojo"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnresta"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnsuma"
+        android:layout_marginStart="139dp"
+        android:background="@color/colorRojo"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnmulti"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnresta"
+        android:layout_marginEnd="124dp"
+        android:background="@color/colorRojo"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/btndivi"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnmulti"
+        android:layout_marginEnd="53dp"
+        android:background="@color/colorRojo"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/tvr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="226dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+</RelativeLayout>
